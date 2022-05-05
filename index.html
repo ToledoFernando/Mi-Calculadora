@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HD4K60FPS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form name="calculadora">
+            <div class="resultado">
+                <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+            </div>
+            <p id="nombre">&copyToledo-xd</p>
+            <br>
+            <div class="botones">
+                <input type="reset" value="c" id="reset">
+                <br>
+                <input type="button" value="7" onclick="document.calculadora.ans.value+='7'">
+                <input type="button" value="8" onclick="document.calculadora.ans.value+='8'">
+                <input type="button" value="9" onclick="document.calculadora.ans.value+='9'">
+                <input type="button" value="+" onclick="document.calculadora.ans.value+='+'" id="mas">  
+                <br>
+                <input type="button" value="4" onclick="document.calculadora.ans.value+='4'">
+                <input type="button" value="5" onclick="document.calculadora.ans.value+='5'">
+                <input type="button" value="6" onclick="document.calculadora.ans.value+='6'">
+                <input type="button" value="-" onclick="document.calculadora.ans.value+='-'" id="menos">
+                <br>
+                <input type="button" value="1" onclick="document.calculadora.ans.value+='1'">
+                <input type="button" value="2" onclick="document.calculadora.ans.value+='2'">
+                <input type="button" value="3" onclick="document.calculadora.ans.value+='3'">
+                <input type="button" value="x" onclick="document.calculadora.ans.value+='*'" id="mutiplicar">
+                <br>
+                <input type="button" value="0" onclick="document.calculadora.ans.value+='0'">
+                <input type="button" value="=" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)" id="igual">
+                <input type="button" value="/" onclick="document.calculadora.ans.value+='/'" id="dividir">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
